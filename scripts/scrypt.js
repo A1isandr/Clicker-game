@@ -1,4 +1,4 @@
-let balance = document.getElementById('balance');
+/*let balance = document.getElementById('balance');
 let save_button = document.getElementById('save');
 let click_area = document.getElementsByClassName('click-area');
 
@@ -18,4 +18,4 @@ click_area[0].onclick = function () {
 
 save_button.onclick = function () {
   localStorage.setItem('money', money);
-};
+};*/
