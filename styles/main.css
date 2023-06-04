@@ -5,8 +5,9 @@ body {
 }
 
 .game-area {
+    margin-top: 20px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 5%;
     width: auto;
     height: auto;
     display: table;
