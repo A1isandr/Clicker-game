@@ -1,4 +1,5 @@
 .click-area {
+    color: #28e637;
     height: 95vh;
     width: 60vw;
     margin-top: 10px;
@@ -6,4 +7,9 @@
     text-align: center;
     display: block;
     user-select: none;
+}
+#bank-image-transparent {
+    height: 300px;
+    width: 300px;
+    box-shadow: 1px 0px 37px 0px #111111;
 }
