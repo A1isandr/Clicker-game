@@ -1,17 +1,18 @@
 .menu {
-	height: 95vh;
+	height: 100%;
 	width: auto;
-	margin-top: 10px;
+	margin-top: 30px;
 	float: left;
-	box-shadow: 0px 0px 19px 9px #000000;
+	box-shadow: 1px 0px 37px 0px #111111;
 	border-radius: 20px;
-	backdrop-filter: blur(30px);
+	background-color: #252525;
 }
 
 
 .nav-menu {
-	width: 100%;
-	margin-bottom: 10px;
+	height: auto;
+	width: inherit;
+	margin-bottom: 20px;
 	overflow-y: hidden;
 	background-color: #2b2b2b;
 	box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.233);
@@ -27,39 +28,82 @@
 	font-weight: bold;
 }
 .nav-scroller__item {
-	color: rgb(218, 218, 218);
+	color: rgb(233, 233, 233);
 	display: flex;
 	padding: 0.5rem 1.25rem;
 	text-decoration: none;
+	border-bottom: 2px solid #2b2b2b;
+}
+.nav-scroller__item:hover {
+	cursor: pointer;
+}
+.nav-scroller__item:hover:not(.active) {
+	color: #28e637;
+}
+.nav-scroller__item:not(.active):not(:hover) {
+	transition: color 0.5s ease;
+	color: rgb(233, 233, 233);
+}
+.nav-scroller__item.active {
+	border-bottom: 2px solid #28e637;
 }
 
 
 .upgrade-menu {
-	max-height: 860px;
-	height: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	overflow-y: scroll;
-	background-color: #2b2b2b;
+	max-height: 850px;
+  	height: auto;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow-y: auto;
 	border-radius: 20px;
 }
 .upgrade-menu::-webkit-scrollbar {
 	width: 0;
+ 	background: transparent;
 }
 .upgrade {
+	height: auto;
+	width: inherit;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	line-height: 0.5em;
+	border-radius: 20px;
+	background-color: #2b2b2b;
+	text-align: right;
 }
-.upgrade:not(:last-child) {
-	border-bottom: 3px solid rgba(0, 0, 0, 0.233);
-}
-#name {
+.upgrade-name {
+	padding-top: 15px;
 	font-size: 22px;
+	font-weight: 500;
+	text-align: left;
 }
-#amount {
-	font-size: 14px;
+.upgrade-amount {
+	padding-top: 20px;
+	font-size: 16px;
+	font-weight: 100;
+	text-align: left;
 }
-.purchase {
-	width: auto;
-	/*float: right;*/
+.upgrade-purchase-buttons {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: inline-block;
 }
-
+#purchase-button {
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: solid 2px #28e637;
+	border-radius: 20px;
+	font-weight: bold;
+	transition: color 0.5s ease, background-color 0.5s ease;
+}
+#purchase-button:not(:first-child) {
+	margin-left: 10px;
+}
+#purchase-button:hover {
+	color: rgb(0, 0, 0);
+	background-color: #28e637;
+	cursor: pointer;
+}
