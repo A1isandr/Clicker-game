@@ -1,1 +1,1 @@
-Just a small web clicker-game.
+#Just a small clicker web-game
