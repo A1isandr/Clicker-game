@@ -1,15 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(31, 31, 31);
     color: rgb(233, 233, 233);
     font-family: 'Rubik', sans-serif;
 }
 
-.game-area {
-    margin-top: 20px;
-    margin-left: 3vw;
-    margin-right: 3vw;
+.wraper {
     width: 100vw;
-    height: 100vh;
     display: table;
     table-layout: fixed;
 }
