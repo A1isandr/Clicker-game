@@ -49,6 +49,7 @@
 	width: 0;
 }
 .upgrade {
+	height: auto;
 	width: inherit;
 	margin-bottom: 10px;
 	line-height: 0.5em;
@@ -69,7 +70,11 @@
 }
 .upgrade-purchase-buttons {
 	width: auto;
-	padding-bottom: 10px;
-	float: right;
+	padding-top: 10px;
+	/*padding-bottom: 10px;*/
+	/*float: right;*/
 }
-
+#purchase-button {
+	padding-left: 10px;
+	padding-right: 10px;
+}

@@ -8,8 +8,8 @@ body {
     margin-top: 20px;
     margin-left: 3vw;
     margin-right: 3vw;
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     display: table;
     table-layout: fixed;
 }
