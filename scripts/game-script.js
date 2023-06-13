@@ -5,7 +5,7 @@ const upgrade_purchase_x1_buttons = document.querySelectorAll('.purchase-button-
 const upgrade_purchase_x10_buttons = document.querySelectorAll('.purchase-button-x1');
 
 
-// Восстановление прогресc
+// Восстановление прогресcа
 if (!localStorage.getItem('player_money')) {
 	player_money = 0;
 	balance.textContent = player_money + ' $';
@@ -30,6 +30,7 @@ else {
 	}
 }
 
+
 // onclick-функции
 click_area[0].onclick = function () {
 	player_money++;
@@ -39,6 +40,7 @@ click_area[0].onclick = function () {
 
 upgrade_purchase_x1_buttons.forEach((button, index) => {
 	button.addEventListener('click', () => {
+		player_money
 		upgrade_amount[index]++;
 		upgrade_amount_spans[index].textContent = 'Количество: ' + upgrade_amount[index];
 		localStorage.setItem('upgrade_amount', JSON.stringify(upgrade_amount));

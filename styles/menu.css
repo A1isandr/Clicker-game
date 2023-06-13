@@ -76,9 +76,15 @@
 	transition: box-shadow 0.5s ease;
 }
 .upgrade:hover {
-	box-shadow: 0px 0px 8px 4px #161616;
+	box-shadow: 0px 5px 10px 2px #161616;
 }
 .upgrade-name {
+	padding-top: 15px;
+	font-size: 22px;
+	font-weight: 500;   
+	text-align: center;
+}
+.upgrade-price {
 	padding-top: 15px;
 	font-size: 22px;
 	font-weight: 500;
@@ -103,13 +109,17 @@
 	border-radius: 20px;
 	font-weight: bold;
 	user-select: none;
-	transition: color 0.5s ease, background-color 0.5s ease;
+	transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
 }
-.purchase-button-x1:not(:first-child), .purchase-button-x10:not(:first-child){
+.purchase-button-x1:not(:first-child), .purchase-button-x10:not(:first-child) {
 	margin-left: 10px;
 }
-.purchase-button-x1:hover, .purchase-button-x10:hover{
+.purchase-button-x1:hover, .purchase-button-x10:hover {
 	color: #2b2b2b;
 	background-color: #28e637;
 	cursor: pointer;
+}
+.purchase-button-x1:active, .purchase-button-x10:active {
+	background-color: #1ca528;
+	border-color: #1ca528;
 }
