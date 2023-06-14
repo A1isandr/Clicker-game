@@ -16,8 +16,8 @@
 	overflow-y: hidden;
 	background-color: #2b2b2b;
 	box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.233);
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
 }
 .nav-scroller__items {
 	display: flex;
@@ -31,7 +31,6 @@
 	color: rgb(233, 233, 233);
 	display: flex;
 	padding: 0.5rem 1.25rem;
-	text-decoration: none;
 	border-bottom: 2px solid #2b2b2b;
 }
 .nav-scroller__item:hover {
@@ -41,7 +40,6 @@
 	color: #28e637;
 }
 .nav-scroller__item:not(.active):not(:hover) {
-	transition: color 0.5s ease-out;
 	color: rgb(233, 233, 233);
 }
 .nav-scroller__item.active {
@@ -50,14 +48,14 @@
 }
 
 
-.upgrade-menu {
+#upgrades {
 	max-height: 850px;
   	height: auto;
 	width: auto;
 	overflow-y: auto;
 	border-radius: 20px;
 }
-.upgrade-menu::-webkit-scrollbar {
+#upgrades::-webkit-scrollbar {
 	width: 0;
  	background: transparent;
 }
@@ -83,18 +81,21 @@
 	font-size: 22px;
 	font-weight: 500;   
 	text-align: center;
+	display: block;
 }
 .upgrade-price {
 	padding-top: 15px;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: 500;
 	text-align: left;
+	display: block;
 }
 .upgrade-amount {
 	padding-top: 20px;
 	font-size: 16px;
 	font-weight: 100;
 	text-align: left;
+	display: block;
 }
 .upgrade-purchase-buttons {
 	padding-top: 20px;
@@ -109,9 +110,8 @@
 	border-radius: 20px;
 	font-weight: bold;
 	user-select: none;
-	transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
 }
-.purchase-button-x1:not(:first-child), .purchase-button-x10:not(:first-child) {
+.purchase-button-x10 {
 	margin-left: 10px;
 }
 .purchase-button-x1:hover, .purchase-button-x10:hover {

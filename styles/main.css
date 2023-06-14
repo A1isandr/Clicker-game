@@ -12,8 +12,8 @@ body {
 
 .wraper {
     width: 100vw;
-    display: table;
-    table-layout: fixed;
+    /*display: table;*/
+   /* table-layout: fixed;*/
 }
 
 
