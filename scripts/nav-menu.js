@@ -1,4 +1,4 @@
-const navItems = document.querySelectorAll('.nav-scroller__item');
+const navItems = document.querySelectorAll('.nav-item');
 const contentBlocks = document.querySelectorAll('.content');
 
 navItems.forEach(item => {

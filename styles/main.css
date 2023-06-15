@@ -1,21 +1,31 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-  }
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(31, 31, 31);
-    color: rgb(233, 233, 233);
+	margin: 0;
+	padding: 0;
+	background-color: rgb(31, 31, 31);
+	color: rgb(233, 233, 233);
 }
+
 
 .wraper {
-    width: 100vw;
-    /*display: table;*/
-   /* table-layout: fixed;*/
+	width: 100vw;
+	display: flex;
 }
 
 
+@media  screen and (max-width:700px) {
+	.wraper {
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
-
+	.click-area, .menu {
+		width: 100%;
+	}
+}

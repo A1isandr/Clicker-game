@@ -1,6 +1,6 @@
 var balance = document.getElementById('balance');
 var click_area = document.querySelectorAll('.click-area');
-const upgrade_amount_spans = document.querySelectorAll('.amount-span');
+const upgrade_amount_spans = document.querySelectorAll('.upgrade-amount');
 const upgrade_purchase_x1_buttons = document.querySelectorAll('.purchase-button-x1');
 const upgrade_purchase_x10_buttons = document.querySelectorAll('.purchase-button-x1');
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	
 	<head>
 		<meta charset="utf-8">
 		<link href="styles/main.css" rel="stylesheet" type="text/css">
@@ -10,21 +11,19 @@
 		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 		<title>Click-Click</title>
 	</head>
+	
 	<body>
 		<div class="wraper">
 			<div class="click-area">
-				<h1 id="balance"></h1>
-				<img id="bank-image-transparent" src="images/bank-transparent.png">
+				<span id="balance"></span>
 			</div>
 			<div class="menu">
-				<div class="nav-menu">
-					<nav class="nav-scroller__items">
-					<a class="nav-scroller__item active" data-content="upgrades">Улучшения</a>
-					<a class="nav-scroller__item" data-content="shop">Магазин</a>
-					<a class="nav-scroller__item" data-content="statistics">Статистика</a>
-					<a class="nav-scroller__item" data-content="options">Настройки</a>
-					</nav>
-				</div>
+				<nav>
+					<span class="nav-item active" data-content="upgrades">Улучшения</span>
+					<span class="nav-item" data-content="shop">Магазин</span>
+					<span class="nav-item" data-content="statistics">Статистика</span>
+					<span class="nav-item" data-content="options">Настройки</span>
+				</nav>
 				<div class="menu-container">
 					<div id="upgrades" class="content">
 						<div class="upgrade">
